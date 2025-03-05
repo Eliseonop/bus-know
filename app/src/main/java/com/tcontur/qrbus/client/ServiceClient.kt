@@ -22,14 +22,6 @@ object ServiceClient {
         .addInterceptor(loggingInterceptor)
         .build()
 
-//    private val retrofit: Retrofit by lazy {
-//        Retrofit.Builder()
-//            .baseUrl(BASE_URL)
-//            .client(client)
-//            .addConverterFactory(GsonConverterFactory.create())
-//            .build()
-//    }
-
     private fun initRetrofit(newBaseUrl: String = BASE_URL): Retrofit {
         return Retrofit.Builder()
             .baseUrl(newBaseUrl)

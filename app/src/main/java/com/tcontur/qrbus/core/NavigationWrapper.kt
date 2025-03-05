@@ -34,7 +34,7 @@ fun NavigationWrapper(context: Context) {
 
         }
         composable<AppRoute.MapRoute> {
-            OsmdroidMapView()
+            OsmdroidMapView(navController)
         }
 
     }

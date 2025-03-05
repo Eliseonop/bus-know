@@ -14,7 +14,7 @@ data class PuntoTrayecto(
 
 data class Recorrido(
     val id: Int,
-    val ruta: Ruta,
+    val ruta: RutaRecor,
     val lado: Boolean,
     val trayecto: List<PuntoTrayecto>
 )
